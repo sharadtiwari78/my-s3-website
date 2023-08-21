@@ -1,10 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
+    <header>
+        <h1>Welcome to My E-commerce Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>My First Heading</h1>
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1.</p>
+            <p>Price: $50.00</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+        </div>
 
-<p>My first paragraph.</p>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2.</p>
+            <p>Price: $75.00</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+    </section>
 
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h3>Customer 1</h3>
+            <p>Great product! I love it.</p>
+        </div>
+
+        <div class="review">
+            <h3>Customer 2</h3>
+            <p>Excellent service and fast delivery.</p>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here dynamically -->
+        </ul>
+    </section>
+
+    <script>
+        function addToCart(productId) {
+            // You would typically implement this function in JavaScript to add items to the cart.
+            // You'd also update the cart UI to reflect the added item.
+            // This is a simplified example, so we're not implementing the full functionality here.
+        }
+    </script>
 </body>
 </html>
+
